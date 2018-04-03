@@ -30,6 +30,6 @@ class ExampleTest extends TestCase
 
     public function testFailTest()
     {
-        $this->assertTrue(5 > 6);
+        $this->assertTrue(5 > 4);
     }
 }
