@@ -12,4 +12,17 @@ before_script:
   - composer install --no-interaction
 
 script:
+  # PHPUnit tests
   - vendor/bin/phpunit
+
+after_success:
+
+notifications:
+  slack: rulemailer:uNKX4aotYlORokPax7NUEIL2
+  email: zion.developer@gmail.com
+#Multi-channel notification
+#   notifications:
+#    slack:
+#      rooms:
+#        - rulemailer:uNKX4aotYlORokPax7NUEIL2#general
+#        - rulemailer:uNKX4aotYlORokPax7NUEIL2#random
